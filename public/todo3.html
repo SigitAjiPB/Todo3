@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body class="h-screen bg-gradient-to-b from-[#149564] to-[#ffffff]">
+
+    <section class="container flex flex-col max-w-full h-full">
+        <section id="nav">
+            <nav class="h-[4rem] flex backdrop-blur-lg shadow-lg bg-[rgb(225,225,225)] rounded-b-xl">
+                <ul class="flex justify-between items-center w-full px-6">
+                    <li class=" text-2xl">
+                        <p class="text-[#149564] font-bold">TODO 3.0</p>
+                    </li>
+                    <button type="button">
+                        <svg class="h-10 w-10" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#149564" viewBox="0 0 256 256"><path d="M224,120v16a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V120a8,8,0,0,1,8-8H216A8,8,0,0,1,224,120Zm-8,56H40a8,8,0,0,0-8,8v16a8,8,0,0,0,8,8H216a8,8,0,0,0,8-8V184A8,8,0,0,0,216,176Zm0-128H40a8,8,0,0,0-8,8V72a8,8,0,0,0,8,8H216a8,8,0,0,0,8-8V56A8,8,0,0,0,216,48Z"></path></svg>
+                    </button>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="listContainer h-full w-full px-4 py-3 overflow-y-scroll scrollbar scrollbar-thumb-transparent scrollbar-none">
+            <div class="listWrapper">
+                <!-- <div class="flex gap-3 justify-center items-center mb-3">
+                    <div class="w-full backdrop-blur-md drop-shadow-md bg-[rgb(225,225,225)] px-4 py-2 rounded-lg flex justify-between gap-3 items-center">
+                        <p class="max-w-none w-full ">adsshfg</p>
+                        <button id="checkBtn" class="w-7 h-7 bg-[#149564] flex justify-center items-center rounded-lg">
+                            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#ffffff" viewBox="0 0 256 256"><path d="M243.33,90.91,114.92,219.31a16,16,0,0,1-22.63,0l-71.62-72a16,16,0,0,1,0-22.61l24-24a16,16,0,0,1,22.57-.06l36.64,35.27.11.11h0l92.73-91.37a16,16,0,0,1,22.58,0l24,23.56A16,16,0,0,1,243.33,90.91Z"></path></svg>
+                    </button>
+                    </div>
+                    <button id="deleteBtn" class="bg-red-500 w-10 h-10 flex rounded-lg justify-center items-center hover:bg-red-600">
+                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#ffff" viewBox="0 0 256 256"><path d="M216,48H176V40a24,24,0,0,0-24-24H104A24,24,0,0,0,80,40v8H40a8,8,0,0,0,0,16h8V208a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V64h8a8,8,0,0,0,0-16ZM112,168a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Zm48,0a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Zm0-120H96V40a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8Z"></path></svg>
+                    </button>
+                </div> -->
+            </div>
+        </section>
+
+        <form id="formInput" class="flex bottom-0 w-full p-6 justify-between items-center h-28 bg-[#149564] rounded-t-xl gap-3 bg-opacity-90 backdrop-blur-xl">
+            <input id="listInput" type="text" class="w-full h-full outline-none flex rounded-lg shadow-lg px-3" placeholder="+ add list">
+            <button id="addBtn" class="w-10 h-10 font-bold flex justify-center items-center shadow-lg rounded-lg text-white text-xl hover:bg-[#118358]">+</button>
+        </form>
+
+
+    </section>
+
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
