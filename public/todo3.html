@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
-<body class="h-screen bg-gradient-to-b from-[#149564] to-[#ffffff]">
+<body class="h-screen bg-gradient-to-b from-[#149564] to-[#ffffff] relative">
 
     <section class="container flex flex-col max-w-full h-full">
         <section id="nav">
@@ -16,11 +16,28 @@
                     <li class=" text-2xl">
                         <p class="text-[#149564] font-bold">TODO 3.0</p>
                     </li>
-                    <button type="button">
-                        <svg class="h-10 w-10" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#149564" viewBox="0 0 256 256"><path d="M224,120v16a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V120a8,8,0,0,1,8-8H216A8,8,0,0,1,224,120Zm-8,56H40a8,8,0,0,0-8,8v16a8,8,0,0,0,8,8H216a8,8,0,0,0,8-8V184A8,8,0,0,0,216,176Zm0-128H40a8,8,0,0,0-8,8V72a8,8,0,0,0,8,8H216a8,8,0,0,0,8-8V56A8,8,0,0,0,216,48Z"></path></svg>
+                    <button id="navBtn" type="button" class="rounded-lg hover:bg-[#149564] group">
+                        <svg class="h-10 w-10 hover:fill-[#ffff]" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#149564" viewBox="0 0 256 256"><path d="M224,120v16a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V120a8,8,0,0,1,8-8H216A8,8,0,0,1,224,120Zm-8,56H40a8,8,0,0,0-8,8v16a8,8,0,0,0,8,8H216a8,8,0,0,0,8-8V184A8,8,0,0,0,216,176Zm0-128H40a8,8,0,0,0-8,8V72a8,8,0,0,0,8,8H216a8,8,0,0,0,8-8V56A8,8,0,0,0,216,48Z"></path></svg>
                     </button>
                 </ul>
             </nav>
+        </section>
+
+        <section id="sidebarContainer" class="absolute right-0 top-16 w-52 overflow-hidden bg-white backdrop-blur-lg rounded-xl z-10 invisible">
+            <div id="sidebarWrapper">
+                <ul class="max-h-max flex flex-col items-center text-lg">
+                    <li class=" w-full flex justify-center py-2 hover:bg-[#149564] group">
+                        <a href="#" class="text-[#149564] group-hover:text-white">New Group</a>
+                    </li>
+                    <li class="w-full flex justify-center py-2 hover:bg-[#149564] group">
+                        <a href="#" class="text-[#149564] group-hover:text-white">New List</a>
+                    </li>
+                    <li class="w-full flex justify-center py-2 hover:bg-[#149564] group">
+                        <a href="#" class="text-[#149564] group-hover:text-white">About</a>
+                    </li>
+                </ul>
+
+            </div>
         </section>
 
         <section class="listContainer h-full w-full px-4 py-3 overflow-y-scroll scrollbar scrollbar-thumb-transparent scrollbar-none">

@@ -2,6 +2,8 @@ const formInput = document.getElementById('formInput');
 const listInput = document.getElementById('listInput');
 const addBtn = document.getElementById('addBtn');
 const listContainer = document.querySelector('.listContainer');
+const navBtn = document.getElementById('navBtn');
+const sidebarContainer = document.getElementById('sidebarContainer');
 
 formInput.addEventListener('submit', function(e) {
     e.preventDefault();
@@ -17,6 +19,17 @@ addBtn.addEventListener('click', function(e) {
     
     }
 });
+
+navBtn.addEventListener("click", () => {
+    sidebarContainer.classList.toggle("invisible");
+
+});
+
+
+
+
+
+
 
 addNewList = () => {
     let listWrapper = document.createElement('div');
