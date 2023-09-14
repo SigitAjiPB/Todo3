@@ -5,6 +5,7 @@ const listContainer = document.querySelector('.listContainer');
 const navBtn = document.getElementById('navBtn');
 const sidebarContainer = document.getElementById('sidebarContainer');
 
+
 formInput.addEventListener('submit', function(e) {
     e.preventDefault();
 });
@@ -37,7 +38,7 @@ addNewList = () => {
 
     listWrapper.innerHTML = `                <div class="flex gap-3 justify-center items-center mb-3">
     <div class="w-full backdrop-blur-md drop-shadow-md bg-[rgb(225,225,225)] px-4 py-2 rounded-lg flex justify-between gap-3 items-center">
-        <p class="max-w-none w-full ">${listInput.value}</p>
+        <p id="textList" class="max-w-none w-full">${listInput.value}</p>
         <button id="checkBtn" class="w-7 h-7 bg-[#149564] flex justify-center items-center rounded-lg">
             <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#ffffff" viewBox="0 0 256 256"><path d="M243.33,90.91,114.92,219.31a16,16,0,0,1-22.63,0l-71.62-72a16,16,0,0,1,0-22.61l24-24a16,16,0,0,1,22.57-.06l36.64,35.27.11.11h0l92.73-91.37a16,16,0,0,1,22.58,0l24,23.56A16,16,0,0,1,243.33,90.91Z"></path></svg>
     </button>
@@ -53,5 +54,12 @@ addNewList = () => {
         listWrapper.remove();
     });
     listContainer.appendChild(listWrapper);
+
+    let checkBtn = document.querySelector('#checkBtn');
+    let textList = document.querySelector('#textList');
+
+    checkBtn.addEventListener('click',function(e) {
+        textList.classList.toggle('line-through');
+    });
 
 }
