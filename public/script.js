@@ -26,12 +26,6 @@ navBtn.addEventListener("click", () => {
 
 });
 
-
-
-
-
-
-
 addNewList = () => {
     let listWrapper = document.createElement('div');
     listWrapper.classList.add('listWrapper');
@@ -53,13 +47,12 @@ addNewList = () => {
     deleteBtn.addEventListener('click',function(e) {
         listWrapper.remove();
     });
-    listContainer.appendChild(listWrapper);
+    listContainer.appendChild(listWrapper); 
 
-    let checkBtn = document.querySelector('#checkBtn');
-    let textList = document.querySelector('#textList');
+    let checkBtn = listWrapper.querySelector('#checkBtn');
+    let textList = listWrapper.querySelector('#textList');
 
-    checkBtn.addEventListener('click',function(e) {
+    checkBtn.addEventListener('click', function() {
         textList.classList.toggle('line-through');
     });
-
 }
